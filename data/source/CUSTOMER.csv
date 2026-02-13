@@ -1,0 +1,3 @@
+customer_id,customer_number,first_name,last_name,date_of_birth,segment,risk_rating,kyc_flag,country,city,email,phone,customer_since,status_flag,fatca_flag,pep_flag,preferred_language,marketing_opt_in,last_updated_ts,source_system
+1001,CUST0001,Ali,Khan,1985-03-10,RETAIL,LOW,Y,AE,Dubai,ali.khan@example.com,971500000001,2015-01-01,ACTIVE,N,N,EN,Y,2025-02-10T10:15:00,CRM
+1002,CUST0002,Sara,Ahmed,1990-07-22,PREMIUM,MEDIUM,Y,AE,Sharjah,sara.ahmed@example.com,971500000002,2018-06-15,ACTIVE,Y,N,EN,N,2025-02-10T11:20:00,CRM

@@ -1,0 +1,4 @@
+txn_id,account_id,txn_ts,posting_date,txn_amount,txn_currency,txn_type_code,channel,merchant_cat_code,auth_code,reversal_flag,orig_txn_id,txn_status,fee_amount,exchange_rate,txn_description,txn_country,created_ts,last_updated_ts,cdc_operation
+5001,2001,2025-02-10T08:30:00,2025-02-10,-250.00,AED,PURCHASE,POS,5411,AUTH123,N,,POSTED,0.00,1.0,Grocery Store,AE,2025-02-10T08:31:00,2025-02-10T08:32:00,INSERT
+5002,2001,2025-02-10T09:15:00,2025-02-10,-1000.00,AED,CASH,ATM,6011,AUTH124,N,,POSTED,5.00,1.0,ATM Withdrawal,AE,2025-02-10T09:16:00,2025-02-10T09:17:00,INSERT
+5003,2002,2025-02-10T10:45:00,2025-02-10,-5000.00,AED,PURCHASE,ECOM,5732,AUTH125,N,,POSTED,0.00,1.0,Electronics Purchase,AE,2025-02-10T10:46:00,2025-02-10T10:47:00,INSERT

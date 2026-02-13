@@ -1,0 +1,3 @@
+account_id,account_number,customer_id,account_type,currency,open_date,close_date,branch_id,status_flag,credit_limit,current_balance,available_balance,overdraft_flag,interest_rate,product_code,iban,swift_code,last_updated_ts,source_system,account_tier
+2001,AE0000000001,1001,CREDIT_CARD,AED,2019-01-01,,3001,ACTIVE,20000,5000,15000,N,0.0,CC01,AE00BANK0000000001,BANKAEXX,2025-02-10T09:00:00,CBS,GOLD
+2002,AE0000000002,1002,CREDIT_CARD,AED,2020-05-10,,3002,ACTIVE,30000,12000,18000,N,0.0,CC02,AE00BANK0000000002,BANKAEXX,2025-02-10T09:05:00,CBS,PLATINUM

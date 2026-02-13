@@ -1,0 +1,3 @@
+branch_id,branch_code,branch_name,region,country,city,address_line1,address_line2,postal_code,phone,manager_id,open_date,close_date,status_flag,timezone,last_updated_ts,source_system,branch_type,atm_available,priority_flag
+3001,BR001,Dubai Main,DXB,AE,Dubai,Sheikh Zayed Rd,,00000,971400000001,M001,2000-01-01,,OPEN,Asia/Dubai,2025-02-09T12:00:00,HR,RETAIL,Y,N
+3002,BR002,Sharjah Central,SHJ,AE,Sharjah,King Faisal St,,00000,971400000002,M002,2005-05-01,,OPEN,Asia/Dubai,2025-02-09T12:05:00,HR,RETAIL,Y,Y

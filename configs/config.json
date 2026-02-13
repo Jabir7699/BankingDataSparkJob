@@ -1,0 +1,10 @@
+{
+  "properties": {
+    "source_path": "C:\\Users\\Jabir\\Downloads\\Miscellanious\\Spark\\Bankdata\\BankingDataSparkJob\\data\\source",
+    "target_path": "C:\\Users\\Jabir\\Downloads\\Miscellanious\\Spark\\Bankdata\\BankingDataSparkJob\\data\\target",
+    "target_file": "CUST_DAILY_TXN_SUMMARY.csv",
+    "cdc_key": "customer_id",
+    "cdc_columns": ["customer_id", "account_id", "business_date"],
+    "watermark": "2025-02-10T00:00:00"
+  }
+}

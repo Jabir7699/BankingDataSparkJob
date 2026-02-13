@@ -1,0 +1,4 @@
+txn_type_code,txn_type_desc,debit_credit_flag,fee_applicable_flag,reporting_group,high_value_threshold,include_in_risk_score,last_updated_ts,source_system
+PURCHASE,Purchase Transaction,D,N,SPEND,3000,Y,2025-02-09T10:00:00,REF
+CASH,Cash Withdrawal,D,Y,CASH,2000,Y,2025-02-09T10:05:00,REF
+REFUND,Refund Transaction,C,N,REFUND,0,N,2025-02-09T10:10:00,REF
