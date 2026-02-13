@@ -1,0 +1,23 @@
+| **Target Column Name** | **Source Table** | **Source Column(s)** | **Source Column Data Type** | **Business Logic** |
+|------------------------|------------------|------------------------|------------------------------|---------------------|
+| customer_id | CUSTOMER | customer_id | BIGINT | Join ACCOUNT.customer_id → CUSTOMER.customer_id |
+| customer_number | CUSTOMER | customer_number | STRING | Direct mapping |
+| customer_name | CUSTOMER | first_name, last_name | STRING, STRING | Concatenate first_name + ' ' + last_name |
+| account_id | ACCOUNT | account_id | BIGINT | Direct mapping |
+| account_number | ACCOUNT | account_number | STRING | Direct mapping |
+| business_date | TRANSACTION | posting_date | DATE | posting_date from transaction fact |
+| total_debit_amount | TRANSACTION + REF_TXN_TYPE | txn_amount, debit_credit_flag | DECIMAL, CHAR(1) | Sum absolute txn_amount where debit_credit_flag = 'D' AND txn_status='POSTED' AND reversal_flag='N' |
+| total_credit_amount | TRANSACTION + REF_TXN_TYPE | txn_amount, debit_credit_flag | DECIMAL, CHAR(1) | Sum txn_amount where debit_credit_flag = 'C' AND txn_status='POSTED' AND reversal_flag='N' |
+| txn_count | TRANSACTION | txn_id | BIGINT | Count distinct txn_id after CDC dedupe |
+| atm_txn_count | TRANSACTION | channel | STRING | Count where channel = 'ATM' |
+| pos_txn_count | TRANSACTION | channel | STRING | Count where channel = 'POS' |
+| online_txn_count | TRANSACTION | channel | STRING | Count where channel IN ('ECOM','ONLINE') |
+| high_value_txn_flag | TRANSACTION + REF_TXN_TYPE | txn_amount, high_value_threshold | DECIMAL, DECIMAL | 'Y' if any txn_amount > threshold for that txn_type_code |
+| risk_segment | CUSTOMER | risk_rating | STRING | Direct mapping |
+| kyc_flag | CUSTOMER | kyc_flag | CHAR(1) | Direct mapping |
+| country | CUSTOMER | country | STRING | Direct mapping |
+| branch_id | ACCOUNT | branch_id | BIGINT | Direct mapping |
+| branch_region | BRANCH | region | STRING | Join ACCOUNT.branch_id → BRANCH.region |
+| last_txn_ts | TRANSACTION | txn_ts | TIMESTAMP | Max(txn_ts) after CDC dedupe |
+| net_txn_amount | TRANSACTION + REF_TXN_TYPE | txn_amount, debit_credit_flag | DECIMAL, CHAR(1) | Sum signed amounts: debit = negative, credit = positive |
+
