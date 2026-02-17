@@ -16,8 +16,9 @@
 <h3>2. Sample CSV structures </h3> <br>
    check data/source directory for source data details
  <br>
-<h3>3.Target table design and business logic  <br>
+<h3>3.Target table design and file  </h3> <br>
 customer_id,customer_number,customer_name,account_id,account_number,business_date,total_debit_amount,total_credit_amount,txn_count,atm_txn_count,pos_txn_count,online_txn_count,high_value_txn_flag,risk_segment,kyc_flag,country,branch_id,branch_region,last_txn_ts,net_txn_amount  <br>
+Target file name : CUST_DAILY_TXN_SUMMARY.csv  <br>
  <br>
 <h3>4. Confluence-style mapping table</h3>  <br>
    check mapping doc in mapping folder
